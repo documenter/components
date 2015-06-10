@@ -1,0 +1,25 @@
+.o-pagenav {
+    margin: 6px 8px;
+    padding: 10px;
+
+    .nav-btn {
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #EDEDED;
+        width: 48%;
+        color: #666666;
+        background-color: #FFF;
+        padding: .8em 0;
+        &:first-child  {
+          float: left;
+        }
+        &:last-child {
+          float: right;
+        }
+        &.disable {
+          color: #D9DADB;
+          pointer-events: none;
+
+        }
+    }
+}
