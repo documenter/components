@@ -55,5 +55,5 @@ destroyComponents: function () {
     }
 },
 //src/lib/mod/detail/index.js
-this.downloadTips = new DownloadTips(options);
+this.comps.downloadTips = new DownloadTips(options);
 ```
