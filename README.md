@@ -19,6 +19,11 @@
 
 ###Start a component
 =======
+> 规范：组件名一律小写
+
+> 入口文件：index.js
+
+> 基础css：base.css
 
 ```js
 define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], function ($Base, $mainTpl) {
