@@ -1,7 +1,7 @@
 组件化
 ========
 
-#### 组件基础类
+#### Super Class
 
     src/lib/base/compbase
 
@@ -9,7 +9,7 @@
 
     this.nodes
 
-##### Functions
+##### Abstract Functions
 
     initialize()
     options(param1, param2) 
@@ -17,7 +17,7 @@
     setData(k, v);
     destroy() //依赖this.nodes, 销毁动作
 
-新增组件
+Start a component
 =======
 
 ```js
@@ -38,7 +38,7 @@ define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], functio
     });
 }:
 ```
-##组件统一销毁（M站框架逻辑）
+##How to Destroy in M（M站框架逻辑）
 
 ```js
 //lib/base/base.js
@@ -54,6 +54,6 @@ destroyComponents: function () {
         }
     }
 },
-//使用: src/lib/mod/detail/index.js
+//src/lib/mod/detail/index.js
 this.downloadTips = new DownloadTips(options);
 ```
