@@ -38,7 +38,7 @@ define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], functio
     });
 }:
 ```
-##How to Destroy in M（M站框架逻辑）
+##How to Destroy Components（M站框架逻辑）
 
 ```js
 //lib/base/base.js
