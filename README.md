@@ -1,14 +1,14 @@
 组件化
 ========
 
-#### Super Class
+##### Super Class
 
     src/lib/base/compbase
 
 ##### Attrbutes
 
     this.nodes
-#### Implements
+##### Implements
 
     Event
     https://github.com/aralejs/events
