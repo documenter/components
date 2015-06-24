@@ -8,16 +8,25 @@
 ##### Attrbutes
 
     this.nodes
+#### Implements
 
-##### Abstract Functions
+    Event
+    https://github.com/aralejs/events
+     
+##### Interface Functions
 
-    initialize()
+    initialize() //初始化
+    render(options); //渲染组件
+    bindEvent(); //事件绑定
+    
+    
+##### Inherit Super Functions
+
     options(param1, param2) //设置或获取options对象
     getData(k); // get
     setData(k, v); // set
-    render(options); //渲染组件
-    destroy() //依赖this.nodes, 销毁动作
-
+    destroy() //依赖this.nodes, 销毁this.nodes节点对象，可覆盖重写
+    
 ###Start a component
 =======
 ####规范：
@@ -27,7 +36,8 @@
 
 > 基础css：base.css
 
-> 渲染节点重写方法：render
+> 渲染的组件要赋值到this.nodes
+
 
 ```js
 define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], function ($Base, $mainTpl) {
