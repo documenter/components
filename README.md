@@ -38,3 +38,22 @@ define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], functio
     });
 }:
 ```
+##组件统一销毁（M站框架逻辑）
+
+```js
+//lib/base/base.js
+function detach() {
+    .....
+    this.destroyComponents();
+}
+//.....
+destroyComponents: function () {
+    for(var i in this.comps) {
+        if (this.comps[i].destroy) {
+            this.comps[i].destroy();
+        }
+    }
+},
+//使用: src/lib/mod/detail/index.js
+this.downloadTips = new DownloadTips(options);
+```
