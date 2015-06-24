@@ -12,18 +12,22 @@
 ##### Abstract Functions
 
     initialize()
-    options(param1, param2) 
-    getData(k); //基于组件实例的变量
-    setData(k, v);
+    options(param1, param2) //设置或获取options对象
+    getData(k); // get
+    setData(k, v); // set
+    render(options); //渲染组件
     destroy() //依赖this.nodes, 销毁动作
 
 ###Start a component
 =======
-> 规范：组件名一律小写
+####规范：
+> 组件名一律小写
 
 > 入口文件：index.js
 
 > 基础css：base.css
+
+> 渲染节点重写方法：render
 
 ```js
 define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], function ($Base, $mainTpl) {
