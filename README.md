@@ -17,7 +17,7 @@
     setData(k, v);
     destroy() //依赖this.nodes, 销毁动作
 
-Start a component
+###Start a component
 =======
 
 ```js
@@ -38,7 +38,7 @@ define('comp/test/index', ['base/compbase', './tpl/main', './base.css'], functio
     });
 }:
 ```
-##How to Destroy Components（M站框架逻辑）
+###How to Destroy Components（M站框架逻辑）
 
 ```js
 //lib/base/base.js
